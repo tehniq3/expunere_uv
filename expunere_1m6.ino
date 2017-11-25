@@ -1,15 +1,15 @@
 // sketch by Nicu FLORICA (niq_ro) from http://nicuflorica.blogspot.ro & http://arduinotehniq.blogspot.com/
 // and Adrian ROMAN (ARelectronics)
 // version 1m5 - 28.04.2016 
-// version 1m6 - 24.11.2015
+// version 1m6 - 24.11.2015 use LCD1602 shield with 5 buttons
 
 #include <Wire.h>
 #include <LiquidCrystal.h>
 #include <EEPROM.h> 
 
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);  // configuration for 1602 shield
-#define goarna 13  // original 10
-#define bec 11
+#define goarna 11  // ver 1.5 use 10
+#define bec 13
 #define bec2 12
 
 int settemp, setzone;
